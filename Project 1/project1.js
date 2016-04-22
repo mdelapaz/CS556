@@ -9,7 +9,7 @@ function calcSetup(){
 }
 
 function buttonClicked(e){
-  var display = document.getElementById("#display");
+  var display = document.getElementById("display");
 
   value = this.textContent
 

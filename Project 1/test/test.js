@@ -55,6 +55,9 @@ describe('Button Clicked Tests', function() {
     );
     op.dispatchEvent(ev);
     expect(display.textContent).to.equal('55x');
+    // second add of operator in a row shouldn't change the string
+    op.dispatchEvent(ev);
+    expect(display.textContent).to.equal('55x');
   });
 
   it('Number Clicked', function(){
